@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+t<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
@@ -17,7 +17,7 @@
     <bean id="jmsTemplate"
           class="org.springframework.jms.core.JmsTemplate">
         <property name="connectionFactory" ref="connectionFactory"/>
-        <property name="defaultDestinationName" value="MY.QUEUE"/>
+        <property name="defaultDestinationNameSelector" value="MY.QUEUE"/>
     </bean>
 
 </beans>
